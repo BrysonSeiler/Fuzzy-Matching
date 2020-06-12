@@ -1,10 +1,10 @@
 from math import floor
-
+import Levenshtein_search
 
 class Jaro:
 
     def __init__(self, string_1, string_2):
-        self.similarity = self.measure(string_1, string_2)
+        self.distance = self.measure(string_1, string_2)
 
     def measure(self, string_1, string_2):
 
@@ -24,3 +24,7 @@ class Jaro:
             return 1
         else:
             return 1 - (1/3) * ((m/len(string_1)) + (m/len(string_2)) + ((m-t)/m))
+
+
+class Levenshtein:
+
