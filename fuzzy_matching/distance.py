@@ -26,5 +26,5 @@ class Jaro:
             return 1 - (1/3) * ((m/len(string_1)) + (m/len(string_2)) + ((m-t)/m))
 
 
-class Levenshtein:
+#class Levenshtein:
 
